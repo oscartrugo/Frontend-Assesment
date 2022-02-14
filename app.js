@@ -1,8 +1,12 @@
-var titles = document.getElementsByClassName("title");
+const wrap = document.querySelector('#book-list li:nth-child(2) .name');
+//console.log(wrap);
 
-console.log(Array.isArray(titles)) //Comprobamos si es un array (false)
-console.log(Array.isArray(Array.from(titles))) //Comprobamos si es un array (true)
+var books = document.querySelector('#book-list li .name'); //Todo li con clase name dentro de book-list
+//console.log(books)
 
-Array.from(titles).forEach(function(item){ //Iteramos sobre el arreglo ya convertido
-    console.log(item);
+books = document.querySelectorAll('#book-list li .name'); //Todo li con clase name dentro de book-list
+//console.log(books)
+
+Array.from(books).forEach(function(book){
+    console.log(book);
 })
