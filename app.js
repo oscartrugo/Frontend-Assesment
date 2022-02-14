@@ -1,5 +1,9 @@
 const bookList = document.querySelector('#book-list');
-console.log('the parent node is: ', bookList.parentNode)
-console.log('the parent node is: ', bookList.parentElement.parentElement)
-//Now the children nodes
-console.log(bookList.children);
+
+console.log("book-list next sibling is ", bookList.nextSibling)
+console.log("book-list next element sibling is ", bookList.nextElementSibling)
+
+console.log("book-list previous sibling is ", bookList.previousSibling)
+console.log("book-list previous element sibling is ", bookList.previousElementSibling)
+//Referenciamos hasta el header y dentro de este buscamos un parrafo, para agregar al HTML lo siguiente
+bookList.previousElementSibling.querySelector('p').innerHTML += '<br/> Too cool for everyone else';
