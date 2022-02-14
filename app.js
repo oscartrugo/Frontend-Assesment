@@ -7,3 +7,11 @@ list.addEventListener('click', function(e){
         list.removeChild(li);
     }
 })
+
+//add book list
+const addForm = document.forms['add-book']
+addForm.addEventListener('submit', function(e){
+    e.preventDefault(); //Previene que la pagina haga refresh
+    const value = addForm.querySelector('input[type="text"]').value;
+    console.log(value)
+})
