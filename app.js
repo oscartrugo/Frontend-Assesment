@@ -1,9 +1,14 @@
-const bookList = document.querySelector('#book-list');
+var btns = document.querySelectorAll('#book-list .delete')
 
-console.log("book-list next sibling is ", bookList.nextSibling)
-console.log("book-list next element sibling is ", bookList.nextElementSibling)
+Array.from(btns).forEach(function(btn){
+    btn.addEventListener('click', function(e){
+        const li = e.target.parentElement; //Redirige al elemento padre del boton
+        li.parentNode.removeChild(li); //Elimina al nodo, todo el objeto book
+    });
+});
 
-console.log("book-list previous sibling is ", bookList.previousSibling)
-console.log("book-list previous element sibling is ", bookList.previousElementSibling)
-//Referenciamos hasta el header y dentro de este buscamos un parrafo, para agregar al HTML lo siguiente
-bookList.previousElementSibling.querySelector('p').innerHTML += '<br/> Too cool for everyone else';
+const link = document.querySelector('#page-banner a');
+link.addEventListener('click', function(e){
+    e.preventDefault(); //Previene la funcion por default
+    console.log("Navigtion to ", e.target.textContent, ' was prevented')
+})
