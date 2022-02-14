@@ -41,10 +41,23 @@
 	    <form id="add-book">
 			<input type="checkbox" id="hide">
 			<label for="hide">Hide all books</label>
-	    	<input type="text" placeholder="Add a book..." />
+	    	<input type="text" placeholder="Add a book..."/>
 	    	<button>Add</button>
 	    </form>
-
+		<div id="tabbed-content">
+			<u class="tabs">
+				<li data-target="#about" class="active">About</li>
+				<li data-target="#contact">Contact</li>
+			</u>
+			<div class="panel active" id="about">
+				<p>Content for about tab...</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam culpa eaque cumque odit. Velit consectetur earum fuga voluptatum assumenda enim pariatur fugit, molestiae itaque, reiciendis dolorum accusamus illo, possimus cumque!</p>
+			</div>
+			<div class="panel" id="contact">
+				<p>Content for contact tab...</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo quos laudantium. Veniam id modi ab vel repellendus nam quidem. Ad itaque aspernatur maxime natus velit optio ab fuga aliquid.</p>
+			</div>
+		</div>
     </div>
     <script src="app.js"></script>
   </body>
