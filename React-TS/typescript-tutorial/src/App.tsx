@@ -41,11 +41,9 @@ type Y=X &{
   d:number;
 };
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <span className="heading">Taskify</span>
   );
 }
 
