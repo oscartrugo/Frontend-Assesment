@@ -49,8 +49,21 @@ body{
     padding-top: 30px;
     line-height: 1.6em;
 }
+#main{
+    float: right;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
 
-p{
+#sidebar{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    border-right: 2px solid black;
+    box-sizing: border-box;
+}
+/* p{
     border-top: 5px solid blue;
     border-right: 3px dotted green;
     border-bottom: 5px dashed red;
@@ -64,5 +77,5 @@ p{
     padding: 10px 20px;
     padding: 20px;
     margin-top: 40px;
-}
+} */
 
