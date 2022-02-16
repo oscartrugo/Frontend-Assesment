@@ -63,6 +63,13 @@ body{
     border-right: 2px solid black;
     box-sizing: border-box;
 }
+#mainFooter{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
 /* p{
     border-top: 5px solid blue;
     border-right: 3px dotted green;
