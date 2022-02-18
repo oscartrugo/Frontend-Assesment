@@ -1,17 +1,8 @@
-//No CSS
-    $primary-color: #272727;
-    $accent-color: #ff652f;
-    $text-color: #fff;
-    $font-weights: (
-        "regular": 400,
-        "medium": 500,
-        "bold": 700
-    );
-
+@import './resets';
+@import './variables';
 
 body{
     background: $primary-color;
-    font-weight: map-get($font-weights, bold);
     color: $text-color;
 }
 
