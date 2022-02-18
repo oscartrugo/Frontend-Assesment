@@ -32,10 +32,10 @@ body{
 
 .main {
     @include flexCenter(row);
-    width: 80%;
+    width: 80% - 40%;
     margin: 0 auto;
 
-    #{&}_paragraph{ //Interpolation, .main__paragraph
+    #{&}__paragraph1{ //Interpolation, .main__paragraph
         font-weight: weight(regular);
 
         &:hover{
@@ -43,9 +43,17 @@ body{
         }
     }
 
+    #{&}__paragraph2{
+        @extend .main__paragraph1;
+
+        &:hover{
+            color: $accent-color;
+        }
+    }
+
     @include mobile{
         flex-direction: column;
-        
+
     };
 }
 .light{
