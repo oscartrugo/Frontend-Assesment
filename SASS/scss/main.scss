@@ -1,0 +1,29 @@
+//No CSS
+    $primary-color: #272727;
+    $accent-color: #ff652f;
+    $text-color: #fff;
+    $font-weights: (
+        "regular": 400,
+        "medium": 500,
+        "bold": 700
+    );
+
+
+body{
+    background: $primary-color;
+    font-weight: map-get($font-weights, bold);
+    color: $text-color;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+
+    #{&}_paragraph{ //Interpolation, .main__paragraph
+        font-weight: map-get($font-weights, bold);
+
+        &:hover{
+            color: pink;
+        }
+    }
+}
