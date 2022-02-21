@@ -7,7 +7,6 @@
     "go": "node index.js",
     "removeModules": "rm -rf node_modules",
     "installModules": "yarn install"
-
   },
   "repository": "https://github.com/oscartrugo/JS-DOM-Tutorial",
   "author": "Oscar Trujillo",
